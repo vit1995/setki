@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 1;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240905141644">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="progressBar"></div>
+	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"><img src="img/popup/cance.svg" alt=""></button>
+					<div class="popup__body">
+						<div class="popup__images images-popup">
+							<div class="images-popup__body">
+								<h2 class="images-popup__title">Получите расчёт стоимости сетки плиссе</h2>
+								<div class="images-popup__subtitle">Мы свяжемся с вами в течение 10 минут, чтобы задать пару
+									уточняющих вопросов</div>
+								<div class="images-popup__img"><img src="img/popup/01.png" alt="#"></div>
+							</div>
+						</div>
+						<form data-ajax action="files/sendmail/sendmail.php" class="popup__form" method="POST">
+							<h3 class="popup__title"><span>Заполните форму ниже,</span>
+								чтобы мы связались с вами</h3>
+							<input type="text" data-error="Error" placeholder="Ваше имя" class="popup__input input">
+							<div class="form-group form-group-popup form-container">
+								<div class="form-select">
+									<div class="select-btn">
+										<img src="img/icon/Flag_of_Russia.svg" alt="flag" class="flag-icon">
+										<span class="country-code">+7</span>
+									</div>
+									<ul class="form-list country"></ul>
+									<input class="form-input-popup-country" type="hidden" name="country" />
+								</div>
+								<input data-required class="form-input form-input-popup input" type="number" name="phone"
+									placeholder="(999) 999-99-99" />
+							</div>
+
+							<button type="submit" class="popup__button">ПОЛУЧИТЬ РАСЧЕТ СТОИМОСТИ</button>
+							<div class="checkbox">
+								<input data-required id="c_1" data-error="Помилка" class="checkbox__input input" type="checkbox"
+									value="1" name="form[]">
+								<label for="c_1" class="checkbox__label"><span class="checkbox__text">Я принимаю <a>условия
+											передачи информации</a></span></label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo logo-header">
+					<a href="#" class="logo-header__img"><img src="img/logo.png" alt="#"></a>
+					<p class="logo-header__text">Производство и установка москитных сеток в СПБ</p>
+				</div>
+				<div class="header__sochial sochial-header">
+					<div class="sochial-header__icons">
+						<a href="#"><img src="img/icon/telegram.svg" alt="#"></a>
+						<a href="#"> <img src="img/icon/whatsapp.svg" alt="#"></a>
+					</div>
+					<p class="sochial-header__text">
+						Отвечаем по WhatsApp
+						или Telegram за 2 минуты
+					</p>
+				</div>
+				<div class="header__number number-header">
+					<a class="number-header__tel" href="tel:+88122409006">8 (812) 240-90-06</a>
+
+					<p class="number-header__text">
+						Сейчас работаем – Звоните
+					</p>
+
+
+					<!-- <div class="header__menu menu">
+			<button type="button" class="menu__icon icon-menu"><span></span></button>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="" class="menu__link"></a></li>
+				</ul>
+			</nav>
+		</div> -->
+				</div>
+				<a href="#" data-popup="#popup" type="button" class="header__button">ОБРАТНЫЙ ЗВОНОК</a>
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<img class="hero__img" src="img/01.jpg" alt="#">
+				<div class="hero__container ">
+					<div class="line"></div>
+					<div class="line line--one"></div>
+					<div class="line line--two"></div>
+					<h1 data-watch data-watch-once class="hero__title">Производство и установка москитных сеток плиссе <br>
+						<strong>за 3 дня
+							в
+							Санкт-Петербурге</strong>
+					</h1>
+					<div class="hero__rows rows-hero">
+						<div data-watch data-watch-once class="rows-hero__body">
+							<i class="rows-hero__icon"><img src="img/icon/accept-check.svg" alt="#"></i>
+							<p class="rows-hero__text">Доступные цены <span>от 4000 р/м²</span></p>
+						</div>
+						<div data-watch data-watch-once class="rows-hero__body">
+							<i class="rows-hero__icon"><img src="img/icon/accept-check.svg" alt="#"></i>
+							<p class="rows-hero__text"><span>Гарантия 1 год </span>на все виды продукции</p>
+						</div>
+						<div data-watch data-watch-once class="rows-hero__body">
+							<i class="rows-hero__icon"><img src="img/icon/accept-check.svg" alt="#"></i>
+							<p class="rows-hero__text"><span>Бесплатный замер</span> в день обращения</p>
+						</div>
+					</div>
+					<div data-watch data-watch-once class="hero__button">
+						<a data-popup="#popup" href="#" class="hero__button-link"><img class="hero__button-icon"
+								src="img/icon/calc-ico.svg" alt="#">РАССЧИТАТЬ СТОИМОСТЬ
+							<div class="hero__button-animation"></div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__pleated pleated">
+				<div class="pleated__container">
+					<div class="line line--black"></div>
+					<div class="line line--black line--one"></div>
+					<div class="line line--black line--two"></div>
+					<div class="pleated__body">
+						<div class="pleated__content">
+							<h2 data-watch data-watch-once class="pleated__title">Москитные сетки плиссе — это <span>удобное и
+									универсальное
+									решение</span> для оконных и дверных проемов любого размера</h2>
+							<div class="pleated__column">
+								<div class="pleated__items">
+									<div class="pleated__number">1</div>
+									<p class="pleated__text">Отличная защита от любых насекомых, пыли и тополиного пуха</p>
+								</div>
+								<div class="pleated__items">
+									<div class="pleated__number">2</div>
+									<p class="pleated__text">Отличная защита от любых насекомых, пыли и тополиного пуха</p>
+								</div>
+								<div class="pleated__items">
+									<div class="pleated__number">3</div>
+									<p class="pleated__text">Отличная защита от любых насекомых, пыли и тополиного пуха</p>
+								</div>
+								<div class="pleated__items">
+									<div class="pleated__number">4</div>
+									<p class="pleated__text">Отличная защита от любых насекомых, пыли и тополиного пуха</p>
+								</div>
+								<div class="pleated__items">
+									<div class="pleated__number">5</div>
+									<p class="pleated__text">Отличная защита от любых насекомых, пыли и тополиного пуха</p>
+								</div>
+								<div class="pleated__items">
+									<div class="pleated__number">6</div>
+									<p class="pleated__text">Отличная защита от любых насекомых, пыли и тополиного пуха</p>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="pleated__images images-pleated">
+							<div class="images-pleated__images-body">
+
+								<img class="images-pleated__img " src="img/pleated/01.png" alt="#">
+
+								<img class="images-pleated__img-bg " src="img/pleated/01.png " alt="#">
+							</div>
+							<div class="images-pleated__items">
+								<div class="images-pleated__item">
+
+									<div class="images-pleated__icon"><img src="img/icon/warranty-paper.svg" alt="#"></div>
+									<h3 class="images-pleated__title">Гарантия
+										2 года</h3>
+									<div class="images-pleated__text">Предоставляем бесплатное гарантийное обслуживание</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__types types">
+				<div class="types__container">
+					<div class="line"></div>
+					<div class="line line--one"></div>
+					<div class="line line--two"></div>
+					<div class="tool">
+						<div class="tool__body">
+							<?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" width="612"
+								height="612" viewBox="0 0 612 612" fill="none">
+								<g clip-path="url(#clip0_527_122)">
+									<path
+										d="M535.442 364.989C530.164 364.989 525.88 360.707 525.88 355.427C525.88 350.147 530.163 345.864 535.442 345.864H577.714C581.859 345.864 585.662 344.151 588.392 341.401C591.141 338.652 592.855 334.868 592.855 330.723V281.319C592.855 277.155 591.162 273.351 588.432 270.641L588.411 270.621L588.39 270.641C585.641 267.892 581.857 266.179 577.712 266.179H535.44C530.66 266.179 526.695 262.653 525.998 258.051C523.13 244.843 519.104 232.074 514.045 219.882L513.846 219.384C508.687 206.993 502.392 195.12 495.16 183.924C492.67 180.079 493.287 175.099 496.415 171.991L496.395 171.971L526.316 142.049C529.245 139.121 530.699 135.216 530.699 131.352C530.699 127.467 529.224 123.562 526.316 120.654L491.393 85.7317C488.465 82.8027 484.581 81.3287 480.676 81.3287C476.771 81.3287 472.866 82.7827 469.979 85.6917L469.939 85.6717L469.96 85.6917L440.058 115.594C436.653 119 431.274 119.28 427.508 116.45C416.352 109.259 404.519 103.043 392.167 97.9427L392.128 97.9227V97.9427C379.776 92.8227 366.808 88.7387 353.4 85.8907C348.918 84.9347 345.83 80.9707 345.83 76.5477H345.809V34.2767C345.809 30.1127 344.117 26.3077 341.386 23.5987L341.347 23.5587C338.659 20.8297 334.872 19.1367 330.69 19.1367H281.285C277.121 19.1367 273.317 20.8297 270.607 23.5587L270.567 23.5987C267.838 26.3077 266.144 30.1127 266.144 34.2767V76.5487C266.144 81.3297 262.598 85.2947 257.997 85.9917C244.769 88.8807 231.98 92.8847 219.828 97.9247V97.9447C207.218 103.165 195.166 109.519 183.85 116.83C180.045 119.34 175.065 118.703 171.957 115.575L171.937 115.595L142.016 85.6927C139.087 82.7647 135.183 81.2907 131.318 81.2907C127.453 81.2907 123.548 82.7647 120.64 85.6727L120.62 85.6927L85.678 120.635C82.769 123.563 81.276 127.448 81.276 131.333C81.276 135.218 82.75 139.122 85.678 142.05L86.176 142.588L115.602 172.013C118.829 175.26 119.227 180.241 116.837 183.926C109.526 195.221 103.171 207.274 97.952 219.884C92.812 232.235 88.748 245.184 85.88 258.591C84.924 263.073 80.96 266.161 76.537 266.161V266.181H34.265C30.101 266.181 26.336 267.874 23.587 270.584L23.547 270.624C20.818 273.373 19.125 277.158 19.125 281.302V330.707C19.125 334.851 20.838 338.654 23.587 341.385L23.985 341.823C26.654 344.313 30.28 345.846 34.244 345.846H76.517C81.298 345.846 85.262 349.372 85.959 353.974C88.828 367.182 92.852 379.953 97.912 392.143L98.111 392.641C103.271 405.033 109.566 416.906 116.798 428.101C119.288 431.946 118.671 436.926 115.543 440.054L115.563 440.074L85.661 469.976C82.733 472.904 81.259 476.809 81.259 480.694C81.259 484.579 82.733 488.483 85.661 491.391L120.603 526.313C123.532 529.243 127.416 530.715 131.301 530.715C135.206 530.715 139.09 529.261 141.999 526.372L171.901 496.45C175.168 493.142 180.288 492.745 183.993 495.255C195.248 502.526 207.261 508.882 219.831 514.081L220.19 514.239C232.382 519.26 245.231 523.263 258.518 526.112C263 527.068 266.088 531.034 266.088 535.456H266.108V577.728C266.108 581.891 267.801 585.676 270.51 588.425L270.55 588.465C273.299 591.174 277.084 592.867 281.228 592.867H330.633C334.778 592.867 338.581 591.153 341.311 588.404L341.749 588.007C344.238 585.318 345.772 581.692 345.772 577.728V535.456C345.772 530.676 349.297 526.711 353.9 525.994C367.108 523.125 379.878 519.121 392.048 514.059C404.658 508.82 416.732 502.465 428.027 495.155C431.872 492.644 436.872 493.282 440 496.429L440.199 496.628L469.882 526.33L469.903 526.309C472.831 529.238 476.715 530.711 480.599 530.711C484.503 530.711 488.41 529.257 491.336 526.349L491.316 526.328L526.238 491.405L526.656 491.008C529.304 488.14 530.621 484.414 530.621 480.69C530.621 476.805 529.146 472.9 526.238 469.972L518.766 462.501L511.295 455.029L503.825 447.559L503.346 447.021L496.434 440.068C493.108 436.761 492.729 431.602 495.298 427.896L497.788 423.953H497.767L500.455 419.471L500.635 419.172L502.826 415.327L505.316 410.706L505.435 410.507L507.527 406.403L507.506 406.383L509.796 401.642C512.087 396.901 517.785 394.91 522.526 397.201C527.267 399.492 529.258 405.188 526.967 409.93L524.676 414.671H524.715L524.616 414.87L522.444 419.134L522.145 419.732L519.655 424.353L519.536 424.552L517.086 428.835L516.826 429.314L515.253 431.923L516.847 433.517L517.406 434.015L524.877 441.505L532.348 448.976L539.819 456.447C546.472 463.1 549.82 471.906 549.82 480.691C549.82 489.137 546.712 497.604 540.497 504.198L539.84 504.935L504.918 539.857L504.897 539.836L504.876 539.857C498.202 546.51 489.417 549.857 480.691 549.857C471.906 549.857 463.121 546.53 456.447 539.857L456.467 539.836L456.447 539.815L431.924 515.293C421.567 521.549 410.708 527.047 399.453 531.708C388.356 536.311 376.842 540.114 364.989 543.062V577.725C364.989 586.769 361.403 595.096 355.566 601.232L354.927 601.929C348.733 608.124 340.125 611.99 330.723 611.99H281.318C271.915 611.99 263.349 608.126 257.134 601.949L257.094 601.91C250.878 595.694 247.014 587.129 247.014 577.725V543.022C235.4 540.133 224.064 536.388 213.108 531.906L212.55 531.708C201.295 527.025 190.417 521.527 180.078 515.293L155.555 539.815L155.515 539.855C148.842 546.508 140.056 549.855 131.331 549.855C122.545 549.855 113.76 546.528 107.106 539.855L72.17 504.935C65.516 498.281 62.17 489.476 62.17 480.691C62.17 471.906 65.517 463.1 72.17 456.447L96.733 431.885C90.617 421.726 85.179 411.028 80.557 399.932L80.338 399.453C75.736 388.338 71.911 376.804 68.963 364.971H34.265C25.221 364.971 16.913 361.385 10.758 355.548L10.061 354.909C3.865 348.714 0 340.128 0 330.705V281.3C0 271.897 3.865 263.351 10.06 257.135L10.1 257.095C16.315 250.899 24.862 247.035 34.265 247.035H68.948C71.896 235.181 75.721 223.647 80.323 212.551C84.985 201.316 90.483 190.458 96.719 180.099L72.694 156.054L72.156 155.576C65.502 148.922 62.156 140.097 62.156 131.332C62.156 122.566 65.503 113.761 72.156 107.108L107.098 72.1857L107.118 72.1657C113.772 65.4917 122.557 62.1657 131.323 62.1657C140.088 62.1657 148.893 65.4927 155.547 72.1657L155.567 72.1857L180.11 96.7287C190.449 90.4937 201.306 84.9947 212.542 80.3327V80.3527L212.582 80.3327C223.698 75.7307 235.232 71.9057 247.026 68.9777V34.2737C247.026 24.8907 250.871 16.3247 257.086 10.1087L257.126 10.0687C263.339 3.85672 271.925 0.0117188 281.288 0.0117188H330.693C340.076 0.0117188 348.641 3.85672 354.857 10.0717L354.897 10.1117C361.113 16.3267 364.958 24.8937 364.958 34.2767V68.9607C376.811 71.9087 388.346 75.7337 399.441 80.3357V80.3557C410.715 85.0377 421.552 90.5157 431.852 96.7307L456.415 72.1877L456.436 72.2077C463.129 65.5147 471.915 62.1877 480.64 62.1877C489.425 62.1877 498.21 65.5147 504.884 72.1877L539.806 107.11C546.459 113.783 549.806 122.569 549.806 131.354C549.806 140.119 546.481 148.924 539.806 155.578L515.244 180.141C521.36 190.301 526.799 200.978 531.421 212.095L531.64 212.573C536.243 223.689 540.068 235.223 543.015 247.056H577.718C587.141 247.056 595.727 250.921 601.922 257.117L601.902 257.137C608.117 263.353 612.002 271.939 612.002 281.322V330.726C612.002 340.149 608.138 348.735 601.922 354.931C595.727 361.126 587.12 364.991 577.718 364.991L535.442 364.989ZM220.229 514.259L225.01 526.551C226.982 521.829 224.851 516.391 220.229 514.259ZM495.321 427.9L496.397 426.587C495.999 426.984 495.62 427.423 495.321 427.9ZM505.461 410.51L508.868 407.024C507.493 407.84 506.318 409.016 505.461 410.51Z"
+										fill="#CDB471"></path>
+									<path
+										d="M305.99 185.281C339.338 185.281 369.539 198.807 391.351 220.641C413.185 242.475 426.711 272.656 426.711 306.004C426.711 339.332 413.185 369.531 391.351 391.365C369.517 413.2 339.318 426.725 305.99 426.725C272.642 426.725 242.441 413.2 220.608 391.366C198.794 369.532 185.268 339.35 185.268 306.004C185.268 272.675 198.794 242.455 220.608 220.621C242.461 198.807 272.662 185.281 305.99 185.281ZM377.846 234.167C359.479 215.799 334.059 204.404 306.01 204.404C277.961 204.404 252.542 215.779 234.174 234.147C215.807 252.514 204.432 277.934 204.432 306.003C204.432 334.052 215.807 359.45 234.174 377.839C252.542 396.206 277.961 407.601 306.01 407.601C334.059 407.601 359.479 396.206 377.846 377.839C396.213 359.472 407.61 334.052 407.61 306.003C407.588 277.954 396.213 252.555 377.846 234.167Z"
+										fill="#CDB471"></path>
+									<path
+										d="M305.99 234.686C325.692 234.686 343.542 242.675 356.41 255.563C369.3 268.452 377.306 286.302 377.306 306.004C377.306 325.626 369.319 343.456 356.41 356.385L356.389 356.405L356.369 356.426L356.348 356.447C343.419 369.356 325.611 377.324 305.989 377.324C286.287 377.324 268.457 369.337 255.548 356.428C242.659 343.539 234.671 325.69 234.671 306.008C234.671 286.345 242.66 268.496 255.548 255.607L255.588 255.567C268.498 242.675 286.348 234.686 305.99 234.686ZM342.904 269.09C333.481 259.667 320.413 253.81 306.008 253.81C291.605 253.81 278.537 259.627 269.094 269.05L269.054 269.09C259.651 278.532 253.814 291.601 253.814 306.004C253.814 320.406 259.671 333.475 269.093 342.898C278.536 352.341 291.584 358.198 306.007 358.198C320.45 358.198 333.498 352.361 342.903 342.96L342.943 342.92C352.365 333.517 358.181 320.447 358.181 306.024C358.181 291.601 352.327 278.533 342.904 269.09Z"
+										fill="#CDB471"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_527_122">
+										<rect width="612.002" height="612.002" fill="white"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</div>
+					<div data-watch data-watch-once class="types__title"><span>Производим все типы</span> москитных сеток
+						плиссе для окон, дверей,
+						беседок и веранд</div>
+
+					<div data-watch data-watch-once class="types__subtitle">Можно установить на:</div>
+					<div class="types__items">
+
+
+						<ul class="types__list">
+							<li class="types__link">Окна</li>
+							<li class="types__link">Пластиковые окна</li>
+							<li class="types__link">Деревянные окна</li>
+							<li class="types__link">Алюминиевые окна</li>
+							<li class="types__link">Мансардные окна</li>
+							<li class="types__link">Двери</li>
+							<li class="types__link">Раздвижные двери </li>
+							<li class="types__link">Балконные двери</li>
+							<li class="types__link">Беседки</li>
+							<li class="types__link">Веранды</li>
+							<li class="types__link">Терассы</li>
+						</ul>
+					</div>
+					<div class="types__images images-types">
+						<div data-watch data-watch-once class="images-types__items">
+							<a href="#" class="images-types__img"><img src="img/types/01.png" alt="#"></a>
+							<h3 class="images-types__title">Москитная сетка
+								плиссе «№1»</h3>
+							<h3 class="images-types__subtitle">Плиссе №1 в Италии. Собираем
+								из европейских комплектующих</h3>
+							<div class="images-types__button"><a data-popup="#popup" href="#"
+									class="images-types__button-link">от 13 850 руб.</a>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="images-types__items images-types__items--two">
+							<a href="#" class="images-types__img"><img src="img/types/02.png" alt="#"></a>
+							<h3 class="images-types__title">Москитная сетка
+								плиссе «№2»</h3>
+							<h3 class="images-types__subtitle">Лучшая сетка в категории
+								Цена/Качество</h3>
+							<div class="images-types__button"><a data-popup="#popup" href="#"
+									class="images-types__button-link">от 7 990 руб.</a>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="images-types__items images-types__items--trea">
+							<a href="#" class="images-types__img"><img src="img/types/03.png" alt="#"></a>
+							<h3 class="images-types__title">Москитная сетка
+								плиссе «№3»</h3>
+							<h3 class="images-types__subtitle">Предназначается для установки
+								на небольшие проемы</h3>
+							<div class="images-types__button"><a data-popup="#popup" href="#"
+									class="images-types__button-link">от 4 990 руб.</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="page__calculator calculator">
+				<div class="calculator__container  calculator__container--calc">
+					<div class="line"></div>
+					<div class="line line--one"></div>
+					<div class="line line--two"></div>
+					<div class="calculator__body">
+
+						<div id="calc" class="slide-calculator__slide-calculator slide-calculator-block">
+							<h4 class="slide-calculator-block__title">Рассчитайте стоимость вашей сетки плиссе</h4>
+							<div class="slide-calculator-block__subtitle"><span>Ответьте на несколько простых
+									вопросов</span> и мы подготовим для вас расчет стоимости</div>
+							<div class="slide-calculator-block__items">
+								<div class="slide-calculator-block__item">
+									<div class="slide-calculator-block__icon">
+										<img src="img/icon/roublesymbol.svg" alt="#">
+
+									</div>
+									<div class="slide-calculator-block__text">Отправка
+										данных бесплатна
+										и ни к чему вас
+										не обязывает</div>
+								</div>
+								<img class="slide-calculator-block__img" src="img/radio/16.png" alt="#">
+							</div>
+						</div>
+
+
+						<div id="calc-last" class="slide-calculator__slide-calculator slide-calculator-block calc-last">
+							<h4 class="slide-calculator-block__title">Отлично! Остался последний шаг </h4>
+							<div class="slide-calculator-block__subtitle"><span>Мы уже готовим расчет </span> стоимости, скоро
+								его
+								вам отправим</div>
+							<div class="slide-calculator-block__items-last">
+								<img class="slide-calculator-block__img" src="img/popup/01.png" alt="#">
+								<img class="slide-calculator-block__load" src="img/radio/load.gif" alt="load">
+							</div>
+						</div>
+
+
+
+						<!-- Оболонка слайдера -->
+						<div class="calculator__slider swiper swiper-container">
+							<!-- Частина слайдера, що рухається -->
+							<form data-ajax action="files/sendmail/sendmail.php" class="calculator__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="calculator__slide swiper-slide slide-calculator slide-main-block">
+									<div class="slide-calculator__body">
+										<div class="slide-calculator__title">Где планируете устанавливать сетку?</div>
+										<div class="options">
+											<div class="options__item">
+												<input data-required id="o_1" class="options__input input" checked type="radio"
+													value="1" name="option">
+												<label for="o_1" class="options__label">
+													<div class="options__text"><img src="img/radio/01.jpg" alt="#"></div>
+
+												</label>
+												<h3 class="options__title">В доме</h3>
+											</div>
+											<div class="options__item">
+												<input data-required id="o_2" class="options__input input" type="radio" value="2"
+													name="option">
+												<label for="o_2" class="options__label">
+													<div class="options__text"><img src="img/radio/02.jpg" alt="#"></div>
+												</label>
+												<h3 class="options__title">В квартире</h3>
+											</div>
+											<div class="options__item">
+												<input data-required id="o_3" class="options__input input" checked type="radio"
+													value="1" name="option">
+												<label for="o_3" class="options__label">
+													<div class="options__text"><img src="img/radio/03.jpg" alt=""></div>
+												</label>
+												<h3 class="options__title">В беседке</h3>
+											</div>
+											<div class="options__item">
+												<input data-required id="o_4" class="options__input input" type="radio" value="2"
+													name="option">
+												<label for="o_4" class="options__label">
+													<div class="options__text"><img src="img/radio/04.jpg" alt=""></div>
+												</label>
+												<h3 class="options__title">На веранде</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="calculator__slide swiper-slide slide-calculator slide-main-block">
+									<div class="slide-calculator__body">
+										<div class="slide-calculator__title">Куда вы хотите установить сетку?</div>
+
+										<div class="options">
+											<div class="options__item">
+												<input id="o_5" class="options__input" checked type="radio" value="1" name="option">
+												<label for="o_5" class="options__label">
+													<div class="options__text"><img src="img/radio/05.jpg" alt="#"></div>
+												</label>
+												<h3 class="options__title">На окно</h3>
+											</div>
+											<div class="options__item">
+												<input id="o_6" class="options__input" type="radio" value="2" name="option">
+												<label for="o_6" class="options__label">
+													<div class="options__text"><img src="img/radio/06.jpg" alt="#"></div>
+												</label>
+												<h3 class="options__title">
+													На двери</h3>
+											</div>
+											<div class="options__item">
+												<input id="o_7" class="options__input" checked type="radio" value="1" name="option">
+												<label for="o_7" class="options__label">
+													<div class="options__text"><img src="img/radio/07.jpg" alt="#"></div>
+												</label>
+												<h3 class="options__title">
+													В проём</h3>
+											</div>
+											<div class="options__item">
+												<input id="o_8" class="options__input" type="radio" value="2" name="option">
+												<label for="o_8" class="options__label">
+													<div class="options__text"><img src="img/radio/08.jpg" alt="#"></div>
+												</label>
+												<h3 class="options__title">
+													Все вместе</h3>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="calculator__slide swiper-slide slide-calculator slide-main-block">
+									<div class="slide-calculator__body">
+										<div class="slide-calculator__title">Куда вы хотите установить сетку?</div>
+
+										<div class="options">
+											<div class="options__item">
+												<input id="o_9" class="options__input" checked type="radio" value="1" name="option">
+												<label for="o_9" class="options__label">
+													<div class="options__text"><img src="img/radio/10.jpg" alt="#"></div>
+												</label>
+												<h3 class="options__title">Защита от насекомых
+												</h3>
+											</div>
+											<div class="options__item">
+												<input id="o_10" class="options__input" type="radio" value="2" name="option">
+												<label for="o_10" class="options__label">
+													<div class="options__text"><img src="img/radio/11.jpg" alt="#"></div>
+												</label>
+												<h3 class="options__title">Защита от пыли</h3>
+											</div>
+											<div class="options__item">
+												<input id="o_11" class="options__input" checked type="radio" value="1"
+													name="option">
+												<label for="o_11" class="options__label">
+													<div class="options__text"><img src="img/radio/12.jpg" alt="#"></div>
+												</label>
+												<h3 class="options__title">
+													Защита от аллергенов</h3>
+											</div>
+											<div class="options__item">
+												<input id="o_12" class="options__input" type="radio" value="2" name="option">
+												<label for="o_12" class="options__label">
+													<div class="options__text"><img src="img/radio/13.jpg" alt="#"></div>
+												</label>
+												<h3 class="options__title">
+													Все вместе</h3>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="calculator__slide swiper-slide slide-calculator slide-main-block">
+									<div class="slide-calculator__body">
+										<div class="slide-calculator__title"> Какое количество сеток нужно?</div>
+										<div class="calculator__colum-range">
+											<div class="calculator__length length-calculator">
+												<div class="length-calculator__range" id="range-length"></div>
+												<div class="length-calculator__numbers">
+													<div class="length-calculator__number">
+														2
+													</div>
+													<div class="length-calculator__numbers">
+														12
+													</div>
+												</div>
+
+											</div>
+											<!-- 
+												<div class="calculator__length range-width">
+													<div class="range-width__title">Ширина в метрах</div>
+													<div class="range-width__range" id="range-width"></div>
+													<div class="length-calculator__numbers">
+														<div class="length-calculator__number">
+															2
+														</div>
+														<div class="length-calculator__numbers">
+															12
+														</div>
+													</div>
+	
+												</div> -->
+
+
+										</div>
+										<div class="slide-calculator__images"><img src="img/radio/14.png" alt="#"></div>
+									</div>
+
+
+								</div>
+								<div class="calculator__slide swiper-slide slide-calculator slide-main-block">
+									<div class="slide-calculator__body">
+										<form class="popup__form popup__form-calc" method="POST">
+											<h3 class="popup__title"><span>Заполните форму ниже</span>, чтобы мы отправили вам
+												расчет стоимости вашей сетки плиссе</h3>
+											<div class="popup__input-body">
+												<div class="form__select-sochial form__select-sochial--black">
+													<select name="form[]" data-class-modif="form">
+														<option value="1" selected>Как с вами связаться?</option>
+														<option value="2">В Телеграме</option>
+														<option value="3">В WhatsApp</option>
+														<option value="4">По телефону</option>
+													</select>
+												</div>
+												<div class="form-group form-group--black form-container form-group-margin">
+													<div class="form-select">
+														<div class="select-btn">
+															<img src="img/icon/Flag_of_Russia.svg" alt="flag" class="flag-icon">
+															<span class="country-code">+7</span>
+														</div>
+														<ul class="form-list country form-list--black"></ul>
+														<input type="hidden" name="country" />
+													</div>
+													<input data-required class="form-input form-input--black input" type="number"
+														name="phone" placeholder="Введите номер телефона" />
+												</div>
+												<!-- <div class="form-group form-group-popup">
+													<div class="form-select">
+														<div class="select-btn">
+															<img src="img/icon/Flag_of_Russia.svg" alt="flag" class="flag-icon">
+															<span class="country-code">+7</span>
+														</div>
+														<ul class="form-list country"></ul>
+														<input class="form-input-popup-country" type="hidden" name="country" />
+													</div>
+													<input class="form-input form-input-popup" type="number" name="phone"
+														placeholder="(999) 999-99-99" />
+												</div> -->
+											</div>
+
+											<button type="submit" class="popup__button popup__button--calc">ПОЛУЧИТЬ РАСЧЕТ
+												СТОИМОСТИ</button>
+
+											<!-- <input id="c_2" data-error="Помилка" class="checkbox__input" type="checkbox"
+													value="1" name="form[]"> -->
+											<div class="checkbox__label-calc"><span class="checkbox__text-calc">Нажимая на
+													кнопку “получить” вы соглашаетесь
+													<a>с политикой конфиденциальности</a></span></div>
+
+										</form>
+									</div>
+
+
+								</div>
+
+
+
+							</form>
+
+							<div id="progress" class="calculator__progress">
+								<div class="calculator__button-body">
+									<div type="button" class="calculator__button-next swiper-button-next">Следующий вопрос</div>
+
+									<div type="button" class="calculator__button-prev swiper-button-prev">Предыдущий вопрос</div>
+								</div>
+
+								<div class="calculator__pagination swiper-pagination"></div>
+								<div class="controll-main-block__fraction fraction-controll">
+									<span class="fraction-controll__current">Вопрос 1 </span> из <span
+										class="fraction-controll__all"> </span>
+								</div>
+
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="polotno" class="page__slider  slider ">
+				<div class="slider__container">
+					<div class="line line--black"></div>
+					<div class="line line--black line--one"></div>
+					<div class="line line--black line--two"></div>
+					<h2 data-watch data-watch-once class="slider__title">Используем полотна, которые <span>выдерживают
+							температурные перепады -30/ +
+							50</span>
+						градусов, держат первоначальную форму и не рвутся</h2>
+					<div data-watch data-watch-once class="slider__subtitle">Благодаря сеточному полотну из полиэстера, ваша
+						сетка будет служить вам
+						долгое время, в отличии от обычных сеток из стекловолокна</div>
+					<!-- Оболонка слайдера -->
+					<div class="slider__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="slider__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/01.png" alt="#"></div>
+										<div class="slide-slider__icon"><img src="img/icon/animal-spider.svg" alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Стандартное</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Petscreen</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text"> Обеспечивает антимоскитную защиту, не затемняя
+										помещение
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">80%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">70%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 950 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/02.png" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--two"><img src="img/slider/02.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Антикошка</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Petscreen</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text"> Защищает вас от насекомых, а домашних питомцев от выпадения
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">60%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">90%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 1650 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/03.png" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--trea"><img src="img/slider/03.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Антипыль</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Micromesh</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text"> Предотвращает попадание мельчайших фракций уличной пыли
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">50%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">70%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 1450 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/04.png" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--fo"><img src="img/slider/04.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Антипыльца</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Poll-Tex</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text">Подходит для людей, страдающих аллергией на пыльцу растений
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">40%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">75%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 2000 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/05.png" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--five"><img src="img/slider/05.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Антимошка</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Petscreen</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text">Размер ячейки позволяет задерживать даже уличную пыль
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">80%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">70%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 1600 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/06.png" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--seven"><img src="img/slider/06.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Антиптица</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Poll-Tex</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text">Самая прочная сетка, состоит из алюминиевых нитей
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">60%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">90%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 1700 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/antimoshka.jpg" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--eight"><img src="img/slider/07.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Ультравью</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Micromesh</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text">Особо тонкие нити практически
+										не заметны и не закрывают обзор
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">50%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">70%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 1450 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items slide-slider__items--block">
+									<img class="slide-slider__img-block" src="img/slider/08.jpg" alt="#">
+
+									<div class="slide-slider__block">
+										<div class="slide-slider__block-title">Оставьте свою заявку</div>
+										<div class="slide-slider__block-subtitle">и получите расчет стоимости сетки для вашего
+											помещения</div>
+									</div>
+									<div class="slide-slider__button-body">
+										<a data-popup="#popup" href="#"
+											class="slide-slider__button slide-slider__button--block">РАССЧИТАТЬ СТОИМОСТЬ</a>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Якщо потрібна пагінація -->
+						</div>
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+
+						<!-- <div type="button" class="slider__prev swiper-button-prev">←</div>
+						<div type="button" class="slider__next swiper-button-next">→</div>
+ -->
+						<div class="slider__pagination swiper-pagination"></div>
+
+					</div>
+
+					<div type="button" class="slider__prev swiper-button-prev">←</div>
+					<div type="button" class="slider__next swiper-button-next">→</div>
+
+
+			</section>
+			<section class="page__opening opening ">
+				<div class="opening__container">
+					<div class="line line--black"></div>
+					<div class="line line--black line--one"></div>
+					<div class="line line--black line--two"></div>
+					<h2 data-watch data-watch-once class="opening__title">Подберем для вас удобный <span>способ открывания
+							сеток плиссе:</span></h2>
+					<div class="opening__body">
+						<a href="#" class="opening__img"><img src="img/open/01.jpg" alt="#"></a>
+						<a href="#" class="opening__img"><img src="img/open/02.jpg" alt="#"></a>
+						<a href="#" class="opening__img"><img src="img/open/03.jpg" alt="#"></a>
+						<a href="#" class="opening__img"><img src="img/open/04.jpg" alt="#"></a>
+						<a href="#" class="opening__img"><img src="img/open/05.jpg" alt="#"></a>
+						<a href="#" class="opening__img"><img src="img/open/06.jpg" alt="#"></a>
+					</div>
+				</div>
+			</section>
+			<section class="page__video video">
+				<div class="video__container">
+					<div class="line line--black"></div>
+					<div class="line line--black line--one"></div>
+					<div class="line line--black line--two"></div>
+					<div data-watch data-watch-once class="video__title">Посмотрите видео <span>выполненных работ</span>
+					</div>
+					<div class="video__body">
+						<div class="video__youtube">
+							<iframe src="https://www.youtube.com/embed/sVUndzwg1Cg"
+								title="🦟 Москитные сетки плиссе Спб ☎️ +7(812)904-25-14" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="video__youtube">
+							<iframe src="https://www.youtube.com/embed/SzqcfsyBpgs" title="МОСКИТНАЯ СЕТКА ПЛИССЕ"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="video__youtube">
+							<iframe src="https://www.youtube.com/embed/BW_S9Mwk_xA"
+								title="Москитная система Genius Magnum 31 выставка Mosbuild 2023" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="video__youtube">
+							<iframe src="https://www.youtube.com/embed/o0K2Wcbl6CE"
+								title="Москитная сетка ПЛИССЕ Genius для веранд, терасс и коттеджей MosBuild 2023"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="video__youtube">
+							<iframe src="https://www.youtube.com/embed/_bsRW8wwfu0"
+								title="Огромная москитная сетка ПЛИССЕ 5*2 метра!" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="video__youtube">
+							<iframe src="https://www.youtube.com/embed/zNT7FWulGSM"
+								title="Раздвижная москитная сетка ПЛИССЕ в Санкт-Петербурге оконная компания RS" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="video__youtube">
+							<iframe src="https://www.youtube.com/embed/HxK0wEtmLII"
+								title="МОСКИТНАЯ СИСТЕМА ПЛИССЕ производство и установка в Санкт-Петербурге оконная компания RS"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="video__youtube">
+							<iframe src="https://www.youtube.com/embed/z8YoG0E_WeI"
+								title="Производство москитных сеток в Санкт-Петербурге" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__form form">
+				<div class="form__container form__container--max">
+
+					<div class="form__images">
+						<img src="img/form/01.jpg" alt="#">
+					</div>
+					<div class="form__content">
+						<h2 data-watch data-watch-once class="form__title">Закажите <span>бесплатный выезд мастера</span> для
+							замера </h2>
+						<div data-watch data-watch-once class="form__subtitle">Оставьте заявку ниже и наш менеджер свяжется с
+							вами, чтобы назначить
+							удобное
+							время для бесплатного замера</div>
+						<form data-ajax action="files/sendmail/sendmail.php" class="form__form"
+							action="files/sendmail/sendmail.php" method="POST">
+							<div class="form__select-body">
+								<div class="form__select-sochial">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Как с вами связаться?</option>
+										<option value="2">В Телеграме</option>
+										<option value="3">В WhatsApp</option>
+										<option value="4">По телефону</option>
+									</select>
+								</div>
+								<div class="form-group form-container">
+									<div class="form-select">
+										<div class="select-btn">
+											<img src="img/icon/Flag_of_Russia.svg" alt="flag" class="flag-icon">
+											<span class="country-code">+7</span>
+										</div>
+										<ul class="form-list country"></ul>
+										<input type="hidden" name="country" />
+									</div>
+									<input data-required class="form-input input" type="number" name="phone"
+										placeholder="(999) 999-99-99" />
+								</div>
+
+							</div>
+							<div class="form__button-body">
+								<button type="submit" class="form__button">ЗАКЗАТЬ БЕСПЛАТНЫЙ ВЫЕЗД</button>
+								<div class="form__politicy">Нажимая на кнопку “отправить” вы соглашаетесь с <a
+										href="#">политикой
+										конфиденциальности</a></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page__installed installed">
+				<div class="installed__container">
+					<div class="line line--black"></div>
+					<div class="line line--black line--one"></div>
+					<div class="line line--black line--two"></div>
+					<div data-watch data-watch-once class="installed__title"><span>Установили более 400 сеток</span> Плиссе
+						за 2023 год</div>
+					<div data-watch data-watch-once class="installed__subtitle">Посмотрите примеры некоторых работ</div>
+					<div class="installed__body">
+						<img data-watch data-watch-once class="installed__img" src="img/installed/01.jpg" alt="#">
+						<img data-watch data-watch-once class="installed__img installed__img--two" src="img/installed/02.jpg"
+							alt="#">
+						<img data-watch data-watch-once class="installed__img installed__img--trea" src="img/installed/03.jpg"
+							alt="#">
+						<img data-watch data-watch-once class="installed__img installed__img--fo" src="img/installed/04.jpg"
+							alt="#">
+						<img data-watch data-watch-once class="installed__img" src="img/installed/05.jpg" alt="#">
+						<img data-watch data-watch-once class="installed__img installed__img--two" src="img/installed/06.jpg"
+							alt="#">
+						<img data-watch data-watch-once class="installed__img installed__img--trea" src="img/installed/07.jpg"
+							alt="#">
+						<img data-watch data-watch-once class="installed__img installed__img--fo" src="img/installed/08.jpg"
+							alt="#">
+					</div>
+					<div class="installed__bottom">
+						<div data-watch data-watch-once class="installed__bottom hero__button">
+							<a href="#" class="installed__button hero__button-link"><img
+									class="installed__button-img hero__button-icon" src="img/icon/calc-ico.svg" alt="#">ВЫЗВАТЬ
+								МАСТЕРА НА ЗАМЕР</a>
+						</div>
+						<div class="installed__text">Чтобы вызвать мастера для бесплатного замера – позвоните по телефону <a
+								data-popup="#popup" href="tel:+88122409006">8 (812)240-90-06</a></div>
+					</div>
+				</div>
+			</section>
+			<section class="page__comments comments">
+				<div class="comments__container">
+					<div class="line"></div>
+					<div class="line line--one"></div>
+					<div class="line line--two"></div>
+					<div class="tool tool--chat">
+						<div class="tool__body ">
+							<?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" width="32"
+								height="32" viewBox="0 0 32 32" fill="none">
+								<g clip-path="url(#clip0_2802_20)">
+									<path
+										d="M13.3905 24.8725C13.9114 24.9564 14.4457 25 14.9903 25H18.0423L17.3426 24.7145L24.4906 31.7145C25.0931 32.3046 26.1106 31.9296 26.1862 31.0896L26.8956 23.2047L26.3336 24.016C29.7675 22.3621 32 18.8812 32 15C32 12.7215 31.2389 10.6211 29.9573 8.93961C29.9856 9.28935 30 9.64299 30 10C30 10.9639 29.8952 11.9033 29.6963 12.8074C29.8941 13.5041 30 14.2396 30 15C30 18.1057 28.214 20.8905 25.4657 22.2141C25.1487 22.3668 24.9352 22.675 24.9037 23.0255L24.1942 30.9104L25.8899 30.2855L18.7419 23.2855C18.555 23.1025 18.3039 23 18.0423 23H15.9967H15.263L13.3905 24.8725ZM2 10.3646C2 5.74396 5.73274 2 10.3377 2H17.6623C22.2632 2 26 5.74677 26 10.3646C26 14.9852 22.2673 18.7291 17.6623 18.7291H14.4776C14.2047 18.7291 13.9426 18.8363 13.7475 19.0277L6.2888 26.3467L8.05818 27L7.31788 18.7557C7.28498 18.3893 7.06224 18.0671 6.73139 17.9074C3.86369 16.5235 2 13.6118 2 10.3646ZM5.2934 18.878L6.02912 27.0545C6.1075 27.9256 7.16269 28.3144 7.78758 27.7025L15.2003 20.4436L14.4747 20.7397H17.6397C23.3622 20.7397 28 16.0974 28 10.3698C28 4.64486 23.358 0 17.6397 0H10.3603C4.63782 0 0 4.64222 0 10.3698C0 14.3946 2.31515 18.0042 5.87627 19.7193L5.2934 18.878Z"
+										fill="#CDB471"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_2802_20">
+										<rect width="32" height="32" fill="white"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</div>
+					<div data-watch data-watch-once class="comments__title">Посмотрите, что говорят <span>наши клиенты</span>
+					</div>
+					<div class="comments__body">
+						<article class="comments__article">
+							<div class="comments__top">
+
+								<img class="comments__avatar" src="img/comments/01.png" alt="#">
+
+								<h2 class="comments__name">Ирина Вавилова</h2>
+								<time class="comments__time" datetime="2023-09-17">17.09.2023 г.</time>
+							</div>
+							<p class="comments__text">Спасибо данной конторе за качественную работу и оперативность. Собрали
+								заказ на 6 сеток, буквально через пару часов приехал замерщик, а уже на следующий день все
+								установили. Качество радует, цена тоже Советую!</p>
+							<div class="comments__rating">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+							</div>
+						</article>
+						<article class="comments__article">
+							<div class="comments__top">
+
+								<img class="comments__avatar" src="img/comments/02.png" alt="#">
+
+								<h2 class="comments__name">Олег Толипова</h2>
+								<time class="comments__time" datetime="2023-07-20">20.07.2023 г.</time>
+							</div>
+							<p class="comments__text">Большое спасибо за москитные сетки плиссе! Заказывали группой 17 шт.
+								Сделали заказ - на следующий день замерили - еще через день установили. Всё очень оперативно
+								Однозначно всем рекомендую!</p>
+							<div class="comments__rating">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+							</div>
+						</article>
+						<article class="comments__article">
+							<div class="comments__top">
+
+								<img class="comments__avatar" src="img/comments/03.png" alt="#">
+
+								<h2 class="comments__name">Сергей Жохов</h2>
+								<time class="comments__time" datetime="2023-04-23">24.04.2023 г</time>
+							</div>
+							<p class="comments__text">Заказал три москитных сетки плиссе для квартиры. Заказ был выполнен в
+								течении трёх дней. Установкой и всем остался доволен. Благодарю! Рекомендую всем своим знакомым.
+							</p>
+							<div class="comments__rating">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+							</div>
+						</article>
+						<article class="comments__article">
+							<div class="comments__top">
+
+								<img class="comments__avatar" src="img/comments/04.png" alt="#">
+
+								<h2 class="comments__name">Лиза Самойлова</h2>
+								<time class="comments__time" datetime="2023-03-10">10.03.2023 г.</time>
+							</div>
+							<p class="comments__text">Вчера днём позвонили и заказали 5 сеткок плиссе, вечером замерщик приехал
+								и сегодня уже установили! Большое спасибо за оперативность и отличную работу!</p>
+							<div class="comments__rating">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+							</div>
+						</article>
+						<article class="comments__article">
+							<div class="comments__top">
+
+								<img class="comments__avatar" src="img/comments/05.png" alt="#">
+
+								<h2 class="comments__name">Анна Липская</h2>
+								<time class="comments__time" datetime="2023-06-25">25.06.2023 г.</time>
+							</div>
+							<p class="comments__text">Выражаю благодарность за качественную работу и удивительно быструю
+								установку - утром произвели замер, вечером уже сетка стояла. Показали как снимать для мытья окон
+								с обратной стороны.</p>
+							<div class="comments__rating">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+							</div>
+						</article>
+						<article class="comments__article">
+							<div class="comments__top">
+
+								<img class="comments__avatar" src="img/comments/06.png" alt="#">
+
+								<h2 class="comments__name">Евгений Смирнов</h2>
+								<time class="comments__time" datetime="2023-03-13">13.03.2023 г.</time>
+							</div>
+							<p class="comments__text">Установили сетку на лоджию, всё замечательно, быстро. Получилось гораздо
+								дешевле, чем в других фирмах. Менеджеры и замерщик вежливые, оплата после установки. Большое
+								спасибо за работу! Всем рекомендую</p>
+							<div class="comments__rating">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+								<img src="img/comments/star.svg" alt="#">
+							</div>
+						</article>
+
+					</div>
+				</div>
+			</section>
+			<section class="page__form form form--black">
+				<div class="form__container form__container--max">
+
+					<div class="form__images">
+						<img src="img/form-two/01jpg.jpg" alt="#">
+					</div>
+					<div class="form__content form__content--white">
+						<h2 data-watch data-watch-once class="form__title form__title--black">Закажите <span>бесплатный выезд
+								мастера</span> для замера
+						</h2>
+						<div data-watch data-watch-once class="form__subtitle form__subtitle--black">Оставьте заявку ниже и
+							наш менеджер свяжется с вами,
+							чтобы назначить
+							удобное
+							время для бесплатного замера</div>
+						<form data-ajax action="files/sendmail/sendmail.php" class="form__form" method="POST">
+							<div class="form__select-body">
+								<div class="form__select-sochial form__select-sochial--black">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Как с вами связаться?</option>
+										<option value="2">В Телеграме</option>
+										<option value="3">В WhatsApp</option>
+										<option value="4">По телефону</option>
+									</select>
+								</div>
+								<div class="form-group form-group--black form-container">
+									<div class="form-select">
+										<div class="select-btn">
+											<img src="img/icon/Flag_of_Russia.svg" alt="flag" class="flag-icon">
+											<span class="country-code">+7</span>
+										</div>
+										<ul class="form-list country form-list--black"></ul>
+										<input type="hidden" name="country" />
+									</div>
+									<input data-required class="form-input form-input--black input" type="number" name="phone"
+										placeholder="Введите номер телефона" />
+								</div>
+
+							</div>
+							<div class="form__button-body">
+								<button type="submit" class="form__button">ЗАКЗАТЬ БЕСПЛАТНЫЙ ВЫЕЗД</button>
+								<div class="form__politicy form__politicy--black">Нажимая на кнопку “отправить” вы соглашаетесь
+									с <a href="#">политикой конфиденциальности</a></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page__slider  slider slider--black">
+				<div class="slider__container slider__container--black">
+					<div class="line "></div>
+					<div class="line  line--one"></div>
+					<div class="line line--two"></div>
+					<h2 data-watch data-watch-once class="slider__title slider__title--while">Так же изготавливаем москитные
+						<span>сетки любых видов и
+							форм</span>
+					</h2>
+					<!-- Оболонка слайдера -->
+					<div class="slider__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="slider__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+									<img class="slide-slider__img slide-slider__img--black" src="img/slider-two/01.png" alt="#">
+									<h3 class="slide-slider__title slide-slider__title--black">Рамочная москитная сетка</h3>
+									<p class="slide-slider__text slide-slider__text--black"> Универсальный тип москитных сеток,
+										оптимальный вариант для любых оконных конструкций.
+									</p>
+									<div class="slide-slider__price slide-slider__price--black">от 990 руб/м2</div>
+									<a data-popup="#popup" href="#"
+										class="slide-slider__button slide-slider__button--black">РАССЧИТАТЬ
+										СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+									<img class="slide-slider__img slide-slider__img--black" src="img/slider-two/03.png" alt="#">
+									<h3 class="slide-slider__title slide-slider__title--black">Рамочная сетка
+										на штоках</h3>
+									<p class="slide-slider__text slide-slider__text--black"> Надежная фиксация сетки. Идеальное
+										решение для окон с металлическими решетками
+									</p>
+									<div class="slide-slider__price slide-slider__price--black">от 1 690 руб/м2</div>
+									<a data-popup="#popup" href="#"
+										class="slide-slider__button slide-slider__button--black">РАССЧИТАТЬ
+										СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+									<img class="slide-slider__img slide-slider__img--black" src="img/slider-two/01.png" alt="#">
+									<h3 class="slide-slider__title slide-slider__title--black">Вставная москитная сетка</h3>
+									<p class="slide-slider__text slide-slider__text--black">Стандартная конструкция, отличается
+										простым монтажом изнутри. Без сверления рамы
+									</p>
+									<div class="slide-slider__price slide-slider__price--black">от 1 490 руб/м2</div>
+									<a data-popup="#popup" href="#"
+										class="slide-slider__button slide-slider__button--black">РАССЧИТАТЬ
+										СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+									<img class="slide-slider__img slide-slider__img--black" src="img/slider-two/03.png" alt="#">
+									<h3 class="slide-slider__title slide-slider__title--black">Раздвижная москитная сетка</h3>
+									<p class="slide-slider__text slide-slider__text--black">Передвигается вправо-влево по
+										направляющим, подходит для раздвижных окон
+									</p>
+									<div class="slide-slider__price slide-slider__price--black">от 1 900 руб/м2</div>
+									<a data-popup="#popup" href="#"
+										class="slide-slider__button slide-slider__button--black">РАССЧИТАТЬ
+										СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+									<img class="slide-slider__img slide-slider__img--black" src="img/slider-two/04.png" alt="#">
+									<h3 class="slide-slider__title slide-slider__title--black">Дверная москитная сетка</h3>
+									<p class="slide-slider__text slide-slider__text--black">На петлях, открывается
+										и закрывается как дверь
+									</p>
+									<div class="slide-slider__price slide-slider__price--black">от 1790 руб/м2</div>
+									<a data-popup="#popup" href="#"
+										class="slide-slider__button slide-slider__button--black">РАССЧИТАТЬ
+										СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+									<img class="slide-slider__img slide-slider__img--black" src="img/slider-two/05.png" alt="#">
+									<h3 class="slide-slider__title slide-slider__title--black">Рулонная москитная сетка</h3>
+									<p class="slide-slider__text slide-slider__text--black">Скатывается в рулон в верхней части
+										окна и раскатывается на нужную длину
+									</p>
+									<div class="slide-slider__price slide-slider__price--black">от 6 900 руб/м2</div>
+									<a data-popup="#popup" href="#"
+										class="slide-slider__button slide-slider__button--black">РАССЧИТАТЬ
+										СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+
+
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+									<img class="slide-slider__img slide-slider__img--black" src="img/slider-two/06.png" alt="#">
+									<h3 class="slide-slider__title slide-slider__title--black">Москитная сетка крыло</h3>
+									<p class="slide-slider__text slide-slider__text--black"> Вставная сетка со специальным
+										креплением "крыло" для более простого и надежного монтажа
+									</p>
+									<div class="slide-slider__price slide-slider__price--black">от 1 290 руб/м2</div>
+									<a data-popup="#popup" href="#"
+										class="slide-slider__button slide-slider__button--black">РАССЧИТАТЬ
+										СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+									<img class="slide-slider__img slide-slider__img--black" src="img/slider-two/07.png" alt="#">
+									<h3 class="slide-slider__title slide-slider__title--black">Москитная
+										сетка плиссе</h3>
+									<p class="slide-slider__text slide-slider__text--black"> Складывается и раскладывается как
+										"гармошка", подходит для больших проемов
+									</p>
+									<div class="slide-slider__price slide-slider__price--black">от 14 900 руб/м2</div>
+									<a data-popup="#popup" href="#"
+										class="slide-slider__button slide-slider__button--black">РАССЧИТАТЬ
+										СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<!-- Якщо потрібна пагінація -->
+						</div>
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+
+						<!-- <div type="button" class="slider__prev swiper-button-prev">←</div>
+						<div type="button" class="slider__next swiper-button-next">→</div>
+ -->
+						<div class="slider__pagination swiper-pagination"></div>
+
+					</div>
+
+					<div type="button" class="slider__prev slider__prev--white swiper-button-prev">←</div>
+					<div type="button" class="slider__next slider__next--white swiper-button-next">→</div>
+
+
+			</section>
+			<section class="page__slider  slider ">
+				<div class="slider__container">
+					<div class="line line--black"></div>
+					<div class="line line--black line--one"></div>
+					<div class="line line--black line--two"></div>
+					<h2 data-watch data-watch-once class="slider__title">Используем полотна, которые <span>выдерживают
+							температурные перепады -30/ +
+							50</span>
+						градусов, держат первоначальную форму и не рвутся</h2>
+					<div data-watch data-watch-once class="slider__subtitle">Благодаря сеточному полотну из полиэстера, ваша
+						сетка будет служить вам
+						долгое время, в отличии от обычных сеток из стекловолокна</div>
+					<!-- Оболонка слайдера -->
+					<div class="slider__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="slider__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/01.png" alt="#"></div>
+										<div class="slide-slider__icon"><img src="img/icon/animal-spider.svg" alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Стандартное</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Petscreen</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text"> Обеспечивает антимоскитную защиту, не затемняя
+										помещение
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">80%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">70%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 950 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/02.png" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--two"><img src="img/slider/02.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Антикошка</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Petscreen</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text"> Защищает вас от насекомых, а домашних питомцев от выпадения
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">60%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">90%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 1650 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/03.png" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--trea"><img src="img/slider/03.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Антипыль</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Micromesh</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text"> Предотвращает попадание мельчайших фракций уличной пыли
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">50%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">70%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 1450 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/04.png" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--fo"><img src="img/slider/04.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Антипыльца</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Poll-Tex</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text">Подходит для людей, страдающих аллергией на пыльцу растений
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">40%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">75%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 2000 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/05.png" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--five"><img src="img/slider/05.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Антимошка</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Petscreen</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text">Размер ячейки позволяет задерживать даже уличную пыль
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">80%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">70%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 1600 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/06.png" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--seven"><img src="img/slider/06.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Антиптица</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Poll-Tex</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text">Самая прочная сетка, состоит из алюминиевых нитей
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">60%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">90%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 1700 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items">
+
+									<div class="slide-slider__images">
+										<div class="slide-slider__img"><img src="img/slider/antimoshka.jpg" alt="#"></div>
+										<div class="slide-slider__icon slide-slider__icon--eight"><img src="img/slider/07.svg"
+												alt="#"></div>
+									</div>
+									<h3 class="slide-slider__title">Ультравью</h3>
+									<div class="slide-slider__manufacturer">
+										<div class="slide-slider__subtitle">Micromesh</div>
+										<div class="slide-slider__flag"><img src="img/icon/Flag_of_Italy.svg" alt="flag-italy">
+										</div>
+										<div class="slide-slider__country">Италия</div>
+									</div>
+									<p class="slide-slider__text">Особо тонкие нити практически
+										не заметны и не закрывают обзор
+									</p>
+									<div class="slide-slider__light-transmission">
+										<div class="light-transmission__top">
+											<p class="light-transmission__text">Светопропускание</p>
+											<div class="light-transmission__percent">50%</div>
+										</div>
+										<div class="light-transmission__bottom"></div>
+									</div>
+									<div class="slide-slider__strength">
+										<div class="strength__top">
+											<div class="strength__text">Прочность</div>
+											<div class="strength__percent">70%</div>
+										</div>
+										<div class="strength__bottom"></div>
+									</div>
+									<div class="slide-slider__price">от 1450 руб/м2</div>
+									<a data-popup="#popup" href="#" class="slide-slider__button">РАССЧИТАТЬ СТОИМОСТЬ</a>
+
+								</div>
+
+							</div>
+
+							<div class="slider__slide swiper-slide slide-slider">
+								<div class="slide-slider__items slide-slider__items--block">
+									<img class="slide-slider__img-block" src="img/slider/08.jpg" alt="#">
+
+									<div class="slide-slider__block">
+										<div class="slide-slider__block-title">Оставьте свою заявку</div>
+										<div class="slide-slider__block-subtitle">и получите расчет стоимости сетки для вашего
+											помещения</div>
+									</div>
+									<div class="slide-slider__button-body">
+										<a data-popup="#popup" href="#"
+											class="slide-slider__button slide-slider__button--block">РАССЧИТАТЬ СТОИМОСТЬ</a>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Якщо потрібна пагінація -->
+						</div>
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+
+						<!-- <div type="button" class="slider__prev swiper-button-prev">←</div>
+						<div type="button" class="slider__next swiper-button-next">→</div>
+ -->
+						<div class="slider__pagination swiper-pagination"></div>
+
+					</div>
+
+					<div type="button" class="slider__prev swiper-button-prev">←</div>
+					<div type="button" class="slider__next swiper-button-next">→</div>
+
+
+			</section>
+			<section class="page__questions questions">
+				<div class="questions__container">
+					<div data-watch data-watch-once class="questions__title">Отвечаем на самые <span>частые вопросы</span>
+					</div>
+					<div data-watch data-watch-once class="questions__subtitle">Нажмите по вопросу, чтобы получить на него
+						ответ</div>
+					<div data-spollers data-one-spoller class="spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title cercle">Могу ли я сам установить сетку?
+								<div class="spollers__svg">
+
+									<svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+											stroke-linecap="square">
+											<g transform="translate(1.000000, 1.000000)" stroke="#000000">
+												<path d="M0,11 L22,11"></path>
+												<path d="M11,0 L11,22"></path>
+											</g>
+										</g>
+									</svg>
+								</div>
+
+							</button>
+							<div class="spollers__body">Сетку самостоятельно установить можно. Но лучше довериться специалисту,
+								чтобы он правильно установил и сделал настройки.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Какие преимущества у москитных сеток
+								плиссе перед рамочными сетками?
+								<div class="spollers__svg">
+
+									<svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+											stroke-linecap="square">
+											<g transform="translate(1.000000, 1.000000)" stroke="#000000">
+												<path d="M0,11 L22,11"></path>
+												<path d="M11,0 L11,22"></path>
+											</g>
+										</g>
+									</svg>
+								</div>
+							</button>
+							<div class="spollers__body">
+								<span>Удобство в использовании</span>
+								Москитные сетки плиссе можно установить как снаружи, так и внутри помещения. Они легко
+								сдвигаются в сторону или вверх, позволяя освободить проем окна или двери без необходимости
+								снимать сетку с креплений. Визуально они более эстетичны, так как не имеют перекладин,
+								разделяющих окно пополам, и не занимают много места при открывании двери.
+								<br> <br>
+								<span>Простой уход</span>
+								В сетках плиссе используется сеточное полотно из полиэстера или полиэфира, которое легко
+								очищается от грязи и пыли. Если полотно дополнительно покрыто пыле- и водоотталкивающим
+								составом, то влага и грязь просто стекают и не накапливаются на поверхности.
+								<p><br><br></p>
+								<span>Долговечность</span>
+								Мы уверенны в качестве наших сеток и даем рекордную гарантию до 5 лет. Как показала практика, в
+								зависимости от модели, сетки работают до 10 и более лет.
+							</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Будет ли москитная сетка плиссе мешать
+								открывать и закрывать окна или двери?
+								<div class="spollers__svg">
+									<svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+											stroke-linecap="square">
+											<g transform="translate(1.000000, 1.000000)" stroke="#000000">
+												<path d="M0,11 L22,11"></path>
+												<path d="M11,0 L11,22"></path>
+											</g>
+										</g>
+									</svg>
+								</div>
+							</button>
+							<div class="spollers__body">Нет, конструкция сетки плиссе не перекрывает окна и двери.</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Как ухаживать за москитной сеткой
+								плиссе? Как часто ее нужно очищать? <div class="spollers__svg">
+
+									<svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+											stroke-linecap="square">
+											<g transform="translate(1.000000, 1.000000)" stroke="#000000">
+												<path d="M0,11 L22,11"></path>
+												<path d="M11,0 L11,22"></path>
+											</g>
+										</g>
+									</svg>
+								</div></button>
+							<div class="spollers__body">Уход за сеткой плиссе прост. Эта процедура поможет вам продлить срок
+								службы конструкции и сохранить подвижность кассеты с сеточным полотном.
+								<br><br>
+								Инструкция:
+								1.Подготовьте инструменты для очистки: пылесос, баллон со сжатым воздухом и силиконовую смазку.
+								2.Очищайте сеточное полотно с помощью пылесоса с насадкой-щеткой. Затем уберите скопившейся
+								мусор в нижней направляющей.
+								3.Сжатым воздухом уберите мусор под ручкой и в углах конструкции.
+								4.Обработайте нити силиконом для лучшего скольжения ручки.
+								<br>
+								Мы рекомендуем проводить чистку не менее 2-3 раз в сезон.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__form form ">
+				<div class="form__container form__container--max">
+
+					<div class="form__images">
+						<img src="img/form-map.jpg" alt="#">
+					</div>
+					<div class="form__content form__content--white">
+						<h2 data-watch data-watch-once class="form__title form__title--black form__title--map"><span>Остались
+								вопросы?</span> Приезжайте к нам в офис на консультацию
+						</h2>
+						<div data-watch data-watch-once class="form__subtitle form__subtitle--black form__subtitle--map">
+							Оставьте заявку ниже и наш менеджер свяжется с вами, чтобы назначить удобное время для встречи
+						</div>
+						<form data-ajax action="files/sendmail/sendmail.php" class="form__form" method="POST">
+							<div class="form__select-body">
+								<div class="form__select-sochial form__select-sochial--black">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Как с вами связаться?</option>
+										<option value="2">В Телеграме</option>
+										<option value="3">В WhatsApp</option>
+										<option value="4">По телефону</option>
+									</select>
+								</div>
+								<div class="form-group form-group--black form-container">
+									<div class="form-select">
+										<div class="select-btn">
+											<img src="img/icon/Flag_of_Russia.svg" alt="flag" class="flag-icon">
+											<span class="country-code">+7</span>
+										</div>
+										<ul class="form-list country form-list--black"></ul>
+										<input type="hidden" name="country" />
+									</div>
+									<input data-required class="form-input form-input--black input" type="number" name="phone"
+										placeholder="Введите номер телефона" />
+								</div>
+
+							</div>
+							<div class="form__button-body">
+								<button type="submit" class="form__button">ЗАПИСАТЬСЯ НА ВСТРЕЧУ</button>
+								<div class="form__politicy form__politicy--black">Нажимая на кнопку “отправить” вы соглашаетесь
+									с <a href="#">политикой конфиденциальности</a></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<div class="map">
+				<script type="text/javascript" charset="utf-8" async
+					src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1e00d9532448c44a281fd504efa21ae1af4f59b95ba5569d20b0b7aaae2e2779&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=true&_v=20240905141644"></script>
+			</div>
+
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+
+				<div class="footer__body">
+					<div class="footer__top">
+
+						<a href="tel:8812240-9006" class="footer__number">8 (812) 240-90-06</a>
+						<ul class="footer__menu">
+							<li class="footer__list"><a data-goto=".hero">Преимущества</a></li>
+							<li class="footer__list"><a data-goto=".types" href="#">Виды сеток</a></li>
+							<li class="footer__list"><a data-goto=".calculator" href="#">Расчет стоимости</a></li>
+							<li class="footer__list"><a data-goto="#polotno" href="#">Полотно </a></li>
+							<li class="footer__list"><a data-goto=".video" href="#">Наши работы</a></li>
+							<li class="footer__list"><a data-goto=".comments" href="#">Отзывы</a></li>
+						</ul>
+					</div>
+					<div class="footer__buttons">
+						<a data-popup="#popup" href="#" class="footer__call">ОБРАТНЫЙ ЗВОНОК</a>
+						<a href="#" class="footer__telegram">TELEGRAM</a>
+						<a href="#" class="footer__whatsapp">WHATSAPP</a>
+					</div>
+					<div class="footer__date">
+						<div class="footer__city">
+							<div class="footer__ofice">Офис:</div>
+							<div class="footer__location">
+								<div class="footer__icon"><img src="img/footer/direction.svg" alt="#"></div>
+								<div class="footer__address">г. Санкт-Петербург, просп. Чернышевского, 4</div>
+							</div>
+						</div>
+						<div class="footer__work">
+							<div class="footer__work-clock">Время работы::</div>
+							<div class="footer__clock-body">
+								<div class="footer__clock-icon"><img src="img/footer/time.svg" alt="#"></div>
+								<div class="footer__clock-text">Ежедневно с 9:00 до 21:00</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__logo"><img src="img/footer/logo.png" alt="#"></div>
+					<p class="footer__text">Сетки плиссе СПб © 2024 г. Все права защищены. Копирование и использование
+						информации с
+						сайта без согласия владельца запрещены и преследуется по закону.</p>
+					<a href="#" class="footer__politicy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20240905141644"></script>
+</body>
+
+</html>
